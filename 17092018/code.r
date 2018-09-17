@@ -47,8 +47,8 @@ priceGap %>% left_join(ecoGap) %>% ungroup() %>%
   annotate("text",x=-100,y=320,label="<- Train is more expensive",colour="grey50",size=3) +
   annotate("text",x=100,y=320,label="Train is less expensive ->",colour="grey50",size=3) +
   annotate("text",x=95,y=160,label="If you are booking to go between Munich and Budapest last minute,\nget the train!",hjust=0,size=3,colour=defaultColours[4])+
-  annotate("text",x=-10,y=120,label="The train gets is an expensive between\nLondon and Amsterdam last minute choice",hjust=1,size=3,,colour=defaultColours[2])+
-  annotate("text",x=155,y=101,label="Relatively it's not that bad to travel\nfrom Berlin to Warsaw by plane",hjust=0,size=3,,colour=defaultColours[1])+
+  annotate("text",x=-10,y=120,label="The train between London and Amsterdam\nis an expensive choice at short notice",hjust=1,size=3,colour=defaultColours[2])+
+  annotate("text",x=155,y=101,label="Relatively, in CO2 terms, it's not that bad to travel\nfrom Berlin to Warsaw by plane",hjust=0,size=3,colour=defaultColours[1])+
   annotate("text",x=-175,y=290,label="It's much better for the planet to\ntravel from London to Marseille by train.",hjust=0,size=3,colour=defaultColours[3])+
   theme_minimal() +
   theme(text=element_text(colour="grey50"),
