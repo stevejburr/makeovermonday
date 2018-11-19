@@ -32,8 +32,8 @@ data %>%
   scale_fill_brewer("",palette = "YlOrRd")+
   scale_colour_identity()+
   labs(x="",
-       y="Working hours per month to afford a home",
-       title="There are four US cities where you need to work at least 100hrs a week to be able to afford to buy a home",
+       y="Working hours per month required to pay typical mortgage",
+       title="There are four US cities where on average over 100hrs of work a month goes directly towards paying a typical mortgage",
        subtitle="Calculations based on 2,087 working hours a year and median household incomes for each city",
        caption="#MakeoverMonday - Design by @stevejburr - Data Source: howmuch.net") +
   theme_minimal() +
@@ -41,8 +41,8 @@ data %>%
         panel.grid=element_blank(),
         axis.title=element_text(colour="grey50"),
         axis.text=element_text(colour="grey50",size=8),
-        plot.subtitle = element_text(size=9),
-        plot.title=element_text(size=10,face="bold")) -> p
+        plot.subtitle = element_text(size=8),
+        plot.title=element_text(size=8,face="bold")) -> p
 
 
 ggsave("plot.png",p,height=10.8,width=9.09)
