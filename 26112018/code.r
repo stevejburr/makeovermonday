@@ -31,7 +31,7 @@ chart_data %>%
         axis.title = element_text(colour="grey50"),
         axis.text= element_text(colour="grey50")) +
   labs(title="Zurich is a very expensive city for a night out - Mexico city is much cheaper.",
-       subtitle="Cities aren't always consistently cheap or expensive across all the parts of a night out.\nFor example clubs are expensive in Miami while Taxi's are cheaper.",
+       subtitle="Cities aren't always consistently cheap or expensive across all the parts of a night out.\nFor example clubs are expensive in Miami while taxis are cheaper.",
        caption="#MakeoverMonday - Design by @stevejburr - Data source: UBS/Statistica")
 
 ggsave("plot.png",width=10,height=10)
